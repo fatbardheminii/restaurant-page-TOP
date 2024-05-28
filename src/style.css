@@ -7,10 +7,10 @@
 
 :root {
   --hd-ft-height: 60px;
-  --hd-ft-bg-color: #dd7686;
-  --hd-ft-color: #fff;
-  --body-bg-color: #ffe4e1;
-  --content-bg-color: #fff0f5;
+  --salmon-pink: #dd7686;
+  --white-bg: #fff;
+  --light-pink: #ffe4e1;
+  --lavender-pink: #fff0f5;
 }
 
 body {
@@ -22,15 +22,16 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-color: var(--body-bg-color);
+  background-color: var(--light-pink);
 }
 
 /*Header selectors*/
 header {
   width: 100%;
-  height: var(--hd-ft-height);
-  background-color: var(--hd-ft-bg-color);
-  color: var(--hd-ft-color);
+  /* height: var(--hd-ft-height); */
+  min-height: var(--hd-ft-height);
+  background-color: var(--salmon-pink);
+  color: var(--white-bg);
 }
 
 nav {
@@ -70,7 +71,7 @@ button:hover {
 #content {
   width: 60%;
   height: auto;
-  background-color: var(--content-bg-color);
+  background-color: var(--lavender-pink);
   color: rgb(209, 65, 87);
 }
 
@@ -133,8 +134,8 @@ img {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: var(--body-bg-color);
-  box-shadow: 3px 3px 5px var(--hd-ft-bg-color);
+  background-color: var(--light-pink);
+  box-shadow: 3px 3px 5px var(--salmon-pink);
 }
 
 /*About module*/
@@ -148,7 +149,7 @@ img {
 }
 
 iframe{
-  border: 10px solid var(--hd-ft-bg-color);
+  border: 10px solid var(--salmon-pink);
 }
 
 #about p {
@@ -167,8 +168,8 @@ iframe{
 footer {
   width: 100%;
   height: var(--hd-ft-height);
-  background-color: var(--hd-ft-bg-color);
-  color: var(--hd-ft-color);
+  background-color: var(--salmon-pink);
+  color: var(--white-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,4 +187,57 @@ a {
   color: white;
   margin: 0 .5rem;
   text-decoration: none;
+}
+
+/*Media Queries" */
+@media (max-width: 1100px){
+  #content {
+    width: 85%;
+  }
+
+  iframe {
+    width: 85%;
+  }
+}
+ 
+@media (max-width: 750px){
+  body {
+    font-size: 14px;
+  }
+  nav, footer h3 {
+    width: 100%;
+  }
+  #about p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 450px) {
+  #content {
+    width: 98%;
+    padding: .5rem;
+  }
+  #home {
+    background-position: 70% 70%;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+  }
+  #h1-span {
+    font-size: 3rem;
+  }
+  .grid {
+    margin: 0;
+  }
+  iframe {
+    width: 95%;
+    height: 380px
+  }
+  button {
+    margin-left: 1rem;
+  }
+  nav {
+    padding-right: .5rem;
+  }
 }

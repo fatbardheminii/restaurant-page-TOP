@@ -5,6 +5,7 @@ import rouladeCakeImg from "./images/roulade-cake.jpg";
 import baklavaImg from "./images/baklava.jpg";
 import birthdayCakeImg from "./images/birthday-cake.jpg";
 
+//get names from img path for h3 text Content
 function capitalizeAndSplit(name) {
   return name
     .split("-")
