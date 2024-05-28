@@ -26,7 +26,7 @@ The project consists of the following files:
 
 ## Live Preview
 
-You can view a live preview of the website [here](#) (https://fatbardheminii.github.io/restaurant-page-TOP/).
+You can view a live preview of the website [here](https://fatbardheminii.github.io/restaurant-page-TOP/).
 
 ## Getting Started
 
